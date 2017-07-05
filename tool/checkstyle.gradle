@@ -1,12 +1,9 @@
 apply plugin: 'checkstyle'
 
 
-def remoteFile = new File("output.xml") <<
-        new URL ("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml").getText()
-
 checkstyle {
     toolVersion = '7.6'
-    configFile =  remoteFile;
+    configFile =  new File("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml");
 
     ignoreFailures = ignoreFailuresInCheck.toBoolean()
 }
