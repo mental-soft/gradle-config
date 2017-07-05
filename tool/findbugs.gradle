@@ -4,7 +4,7 @@ tasks.withType(FindBugs) {
     reports {
         xml.enabled false
         html.enabled true
-        html.stylesheet resources.text.fromFile('config/findbugs/default.xsl')
+        html.stylesheet resources.text.fromFile('https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/findbugs/default.xsl')
     }
 }
 

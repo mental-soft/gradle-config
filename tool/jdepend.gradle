@@ -16,7 +16,7 @@ jdependMain {
 task jdependReport(dependsOn: jdependMain, group: 'verification', description: 'Generates a HTML report after executing jdepend checks.') {
     doLast() {
         ant.xslt(in: "$reporting.baseDir/jdepend/main.xml",
-                style: "$rootDir/config/jdepend/jdepend.xsl",
+                style: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/jdepend/jdepend.xsl",
                 out: "$reporting.baseDir/jdepend/main.html")
     }
 
