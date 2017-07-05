@@ -1,8 +1,14 @@
 apply plugin: 'checkstyle'
 
+def f = new File('the file path')
+if (!f.exists()) {
+    new URL('https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml')
+            .withInputStream{ i -> f.withOutputStream{ it << i }}
+}
+
 checkstyle {
     toolVersion = '7.6'
-    configFile =  new File("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml");
+    configFile =  f;
 
     ignoreFailures = ignoreFailuresInCheck.toBoolean()
 }
