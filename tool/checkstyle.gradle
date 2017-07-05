@@ -1,10 +1,10 @@
 apply plugin: 'checkstyle'
 
 
-//def fileLocation = 'https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml'
-//def fileURL = new URL(fileLocation)
-//def remoteFile = new File(fileURL.toURI())
-def remoteFile = new File("output.xml") << new URL ("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml").getText()
+def fileLocation = 'https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml'
+def fileURL = new URL(fileLocation)
+def remoteFile = new File(fileURL.toURI())
+//def remoteFile = new File("output.xml") << new URL ("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml").getText()
 
 checkstyle {
     toolVersion = '7.6'
