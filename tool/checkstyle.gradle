@@ -1,14 +1,12 @@
 apply plugin: 'checkstyle'
 
-def f = new File('the file path')
-if (!f.exists()) {
-    new URL('https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml')
-            .withInputStream{ i -> f.withOutputStream{ it << i }}
-}
+def fileLocation = 'https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml'
+def fileURL - new URL(fileLocation)
+def remoteFile = new File(fileURL.toURI())
 
 checkstyle {
     toolVersion = '7.6'
-    configFile =  f;
+    configFile =  remoteFile;
 
     ignoreFailures = ignoreFailuresInCheck.toBoolean()
 }
