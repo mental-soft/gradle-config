@@ -16,6 +16,8 @@ compileJava { dependsOn += ['clean'] }
 //Sadece gradle(w) komutu çalıştırıldığında çalışacak tasklar
 defaultTasks 'clean', 'check', 'build', 'javadoc'
 
+
+apply plugin: 'idea'
 idea {
     module {
         //Uygulamayı ideada açarsanız
@@ -37,3 +39,12 @@ test {
     }
     ignoreFailures ignoreFailuresInCheck.toBoolean()
 }
+
+apply from: "$rootDir/gradle-conf/dependencies.gradle"
+
+apply from: "$rootDir/gradle-conf/checkstyle.gradle"
+apply from: "$rootDir/gradle-conf/jacoco.gradle"
+apply from: "$rootDir/gradle-conf/pmd.gradle"
+apply from: "$rootDir/gradle-conf/findbugs.gradle"
+apply from: "$rootDir/gradle-conf/jdepend.gradle"
+apply from: "$rootDir/gradle-conf/javancss.gradle"
