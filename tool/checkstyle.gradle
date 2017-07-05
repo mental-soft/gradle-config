@@ -2,5 +2,7 @@ apply plugin: 'checkstyle'
 
 checkstyle {
     toolVersion = '7.6'
+    configLocation =  new File("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml");
+
     ignoreFailures = ignoreFailuresInCheck.toBoolean()
 }
