@@ -1,4 +1,3 @@
-
 repositories {
     mavenCentral()
 }
@@ -40,11 +39,11 @@ test {
     ignoreFailures ignoreFailuresInCheck.toBoolean()
 }
 
-apply from: "$rootDir/gradle-conf/dependencies.gradle"
+apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/dependencies.gradle"
 
-apply from: "$rootDir/gradle-conf/checkstyle.gradle"
-apply from: "$rootDir/gradle-conf/jacoco.gradle"
-apply from: "$rootDir/gradle-conf/pmd.gradle"
-apply from: "$rootDir/gradle-conf/findbugs.gradle"
-apply from: "$rootDir/gradle-conf/jdepend.gradle"
-apply from: "$rootDir/gradle-conf/javancss.gradle"
+apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/tool/checkstyle.gradle"
+apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/tool/jacoco.gradle"
+apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/tool/pmd.gradle"
+apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/tool/findbugs.gradle"
+apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/tool/jdepend.gradle"
+apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/tool/javancss.gradle"
