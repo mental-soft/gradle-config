@@ -2,7 +2,8 @@ apply plugin: 'checkstyle'
 
 checkstyle {
     toolVersion = '7.6'
-    configFile = "https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml";
+    new File("/config/checkstyle/checkstyle.xml") << new URL ("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml").getText()
+    //configFile = output.xml
 
     ignoreFailures = ignoreFailuresInCheck.toBoolean()
 }
