@@ -39,8 +39,6 @@ test {
     ignoreFailures ignoreFailuresInCheck.toBoolean()
 }
 
-apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/dependencies.gradle"
-
 apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/tool/checkstyle.gradle"
 apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/tool/jacoco.gradle"
 apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/tool/pmd.gradle"
