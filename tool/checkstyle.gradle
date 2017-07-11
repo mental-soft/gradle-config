@@ -7,8 +7,7 @@ checkstyle {
     config.deleteDir()
     config.mkdirs()
     new File("$rootDir/config/checkstyle/checkstyle.xml") <<
-            new URL("https://raw.githubusercontent.com/mental-soft/" +
-                    "gradle-config/master/xml/checkstyle/checkstyle.xml").getText()
+            new URL("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml").getText()
 
     ignoreFailures = ignoreFailuresInCheck.toBoolean()
 }
