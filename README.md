@@ -20,3 +20,9 @@ Buradan projenin root klasöründe
 config klasörü oluşacak fakat o klasörü git repositorisine yüklemeye gerek yok.
 
 <code> /config/ </code> ifadesini .gitignore dosyasına ekleyin. (varsa .dockerignore dosyasına da)
+
+
+
+#Sample project
+
+[Authentication](https://github.com/mental-soft/authentication)
