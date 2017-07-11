@@ -4,7 +4,13 @@ tasks.withType(FindBugs) {
     reports {
         xml.enabled false
         html.enabled true
-        html.stylesheet resources.text.fromFile('https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/findbugs/default.xsl')
+        new File("$rootDir/config/findbugs/").mkdirs()
+        new File("$rootDir/config/findbugs/default.xml")
+        doLast {
+            new URL("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/findbugs/default.xsl").getText()
+        }
+
+        html.stylesheet resources.text.fromFile('config/findbugs/default.xsl')
     }
 }
 
@@ -12,5 +18,5 @@ findbugs {
     ignoreFailures = ignoreFailuresInCheck.toBoolean()
     sourceSets = [sourceSets.main]
     effort = "max"
-    reportLevel ="high"
+    reportLevel = "high"
 }

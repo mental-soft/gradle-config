@@ -3,8 +3,8 @@ apply plugin: 'checkstyle'
 checkstyle {
     toolVersion = '7.6'
     new File("$rootDir/config/checkstyle/").mkdirs()
-    new File("$rootDir/config/checkstyle/checkstyle.xml") << new URL ("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml").getText()
-    //configFile = output.xml
+    new File("$rootDir/config/checkstyle/checkstyle.xml") <<
+            new URL ("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml").getText()
 
     ignoreFailures = ignoreFailuresInCheck.toBoolean()
 }
