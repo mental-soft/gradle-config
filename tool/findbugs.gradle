@@ -4,11 +4,9 @@ tasks.withType(FindBugs) {
     reports {
         xml.enabled false
         html.enabled true
-        new File("$rootDir/config/findbugs/").mkdirs()
-        new File("$rootDir/config/findbugs/default.xml")
-        doLast {
-            new URL("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/findbugs/default.xsl").getText()
-        }
+        new File("$rootDir/config/findbugs/").deleteDir().mkdirs()
+        new File("$rootDir/config/findbugs/default.xml") <<
+                new URL("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/findbugs/default.xsl").getText()
 
         html.stylesheet resources.text.fromFile('config/findbugs/default.xsl')
     }
