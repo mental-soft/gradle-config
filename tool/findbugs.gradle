@@ -7,7 +7,7 @@ tasks.withType(FindBugs) {
         def config = new File("$rootDir/config/findbugs/")
         config.deleteDir()
         config.mkdirs()
-        new File("$rootDir/config/findbugs/default.xml") <<
+        new File("$rootDir/config/findbugs/default.xsl") <<
                 new URL("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/findbugs/default.xsl").getText()
 
         html.stylesheet resources.text.fromFile('config/findbugs/default.xsl')
