@@ -8,6 +8,8 @@ checkstyle {
     config.mkdirs()
     new File("$rootDir/config/checkstyle/checkstyle.xml") <<
             new URL("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml").getText()
+    new File("$rootDir/config/checkstyle/suppressions.xml") <<
+            new URL("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/suppressions.xml").getText()
 
     ignoreFailures = ignoreFailuresInCheck.toBoolean()
 }
