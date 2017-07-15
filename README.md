@@ -8,10 +8,10 @@ Ayrıca her uygulamanın dependency leri burada tutulabilir.
  
 Aşağıdaki kodları gradle.properties dosyasına ekleyin.
  
-######Build rules
+###### Build rules
 ignoreFailuresInCheck=false
  
-######Jacoco
+###### Jacoco
 codeCoveragePercent=0.50
  
 ## Gitignore
@@ -23,6 +23,6 @@ config klasörü oluşacak fakat o klasörü git repositorisine yüklemeye gerek
 
 
 
-#Sample project
+# Sample project
 
 [Authentication](https://github.com/mental-soft/authentication)
