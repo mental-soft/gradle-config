@@ -2,7 +2,7 @@ apply plugin: 'pmd'
 
 pmd {
     ignoreFailures = ignoreFailuresInCheck.toBoolean()
-    sourceSets = [sourceSets.main]
+    sourceSets = [sourceSets.main, sourceSets.test]
     ruleSets = [
             'java-basic',
             'java-braces',
