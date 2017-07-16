@@ -16,7 +16,7 @@ tasks.withType(FindBugs) {
 
 findbugs {
     ignoreFailures = ignoreFailuresInCheck.toBoolean()
-    sourceSets = [sourceSets.main]
+    sourceSets = [sourceSets.main, sourceSets.test]
     effort = "max"
     reportLevel = "high"
 }
