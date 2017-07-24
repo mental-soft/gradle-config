@@ -1,13 +1,13 @@
 apply plugin: 'checkstyle'
 
 checkstyle {
-    toolVersion = '7.6'
+    toolVersion = '8.0'
 
     def config = new File("$rootDir/config/checkstyle/")
     config.deleteDir()
     config.mkdirs()
-    new File("$rootDir/config/checkstyle/checkstyle.xml") <<
-            new URL("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml").getText()
+    new File("$rootDir/config/checkstyle/checkstyle2.xml") <<
+            new URL("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle2.xml").getText()
     new File("$rootDir/config/checkstyle/suppressions.xml") <<
             new URL("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/suppressions.xml").getText()
 
