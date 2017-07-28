@@ -2,7 +2,7 @@ apply plugin: 'jacoco'
 
 jacocoTestCoverageVerification {
     violationRules {
-        failOnViolation = ignoreFailuresInCheck.toBoolean()
+        failOnViolation = !ignoreFailuresInCheck.toBoolean()
         rule {
             enabled = true
             limit {
