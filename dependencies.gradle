@@ -12,6 +12,7 @@ dependencies {
     compile group: 'com.zaxxer', name: 'HikariCP'
 
     compile 'com.teammental:mebuilder:1.+'
+    compile 'com.teammental:memapper:1.+'
 
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
 }
