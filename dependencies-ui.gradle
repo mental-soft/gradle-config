@@ -7,7 +7,7 @@ dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator'
     compile group: 'org.springframework.boot', name: 'spring-boot-devtools'
 
-    compile 'com.teammental:mestarter:0.+'
+    compile 'com.teammental:mestarter:0.1.10'
 
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
 }
