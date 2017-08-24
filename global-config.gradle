@@ -1,6 +1,9 @@
 repositories {
     mavenCentral()
     jcenter()
+	maven {
+        url  "http://dl.bintray.com/mental-soft/meparty" 
+    }
 }
 
 task wrapper(type: Wrapper) {
