@@ -3,13 +3,16 @@ apply plugin: 'checkstyle'
 checkstyle {
     toolVersion = '8.0'
 
-    def config = new File("$rootDir/config/checkstyle/")
+    def config = new File("config/checkstyle/")
     config.deleteDir()
     config.mkdirs()
-    new File("$rootDir/config/checkstyle/checkstyle.xml") <<
+    new File("config/checkstyle/checkstyle.xml") <<
             new URL("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml").getText()
-    new File("$rootDir/config/checkstyle/suppressions.xml") <<
+    new File("config/checkstyle/suppressions.xml") <<
             new URL("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/suppressions.xml").getText()
 
     ignoreFailures = ignoreFailuresInCheck.toBoolean()
+
+    sourceSets = [sourceSets.main]
+
 }
