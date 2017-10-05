@@ -15,14 +15,14 @@ jdependMain {
 
 task jdependReport(dependsOn: jdependMain, group: 'verification', description: 'Generates a HTML report after executing jdepend checks.') {
     doLast() {
-        def config = new File("$rootDir/config/jdepend/")
+        def config = new File("$projectDir/config/jdepend/")
         config.deleteDir()
         config.mkdirs()
-        new File("$rootDir/config/jdepend/jdepend.xsl") <<
+        new File("$projectDir/config/jdepend/jdepend.xsl") <<
                 new URL("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/jdepend/jdepend.xsl").getText()
 
         ant.xslt(in: "$reporting.baseDir/jdepend/main.xml",
-                style: "$rootDir/config/jdepend/jdepend.xsl",
+                style: "$projectDir/config/jdepend/jdepend.xsl",
                 out: "$reporting.baseDir/jdepend/main.html")
     }
 

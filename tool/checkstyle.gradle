@@ -3,12 +3,12 @@ apply plugin: 'checkstyle'
 checkstyle {
     toolVersion = '8.0'
 
-    def config = new File("$rootDir/config/checkstyle/")
+    def config = new File("$projectDir/config/checkstyle/")
     config.deleteDir()
     config.mkdirs()
-    new File("$rootDir/config/checkstyle/checkstyle.xml") <<
+    new File("$projectDir/config/checkstyle/checkstyle.xml") <<
             new URL("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/checkstyle.xml").getText()
-    new File("$rootDir/config/checkstyle/suppressions.xml") <<
+    new File("$projectDir/config/checkstyle/suppressions.xml") <<
             new URL("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/suppressions.xml").getText()
 
     ignoreFailures = ignoreFailuresInCheck.toBoolean()
