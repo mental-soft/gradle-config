@@ -6,10 +6,6 @@ repositories {
     }
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '4.3.1'
-}
-
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
@@ -46,6 +42,7 @@ test {
     ignoreFailures ignoreFailuresInCheck.toBoolean()
 }
 
+apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/wrapper-version.gradle"
 apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/tool/checkstyle.gradle"
 apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/tool/jacoco.gradle"
 apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/tool/pmd.gradle"
