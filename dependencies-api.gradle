@@ -13,8 +13,7 @@ dependencies {
     compile group: 'org.postgresql', name: 'postgresql', version: "$postgresqlVersion"
     compile group: 'com.zaxxer', name: 'HikariCP'
 
-    compile 'com.teammental:mebuilder:2.+'
-    compile 'com.teammental:memapper:2.+'
+    compile 'com.teammental:mestarter:0.1.+'
 
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
 }
