@@ -4,6 +4,9 @@ repositories {
 	maven {
         url  "http://dl.bintray.com/mental-soft/meparty" 
     }
+	maven {
+        url  "https://dl.bintray.com/mental-soft/api" 
+    }
 }
 
 sourceCompatibility = 1.8
