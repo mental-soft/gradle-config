@@ -1,1 +1,18 @@
-.idea/
+*.jar
+.gradle
+build/
+/*/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+out/
+/*/out/
+
+logs/
+/*/config/
+/config/

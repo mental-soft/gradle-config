@@ -23,6 +23,8 @@ config klasörü oluşacak fakat o klasörü git repositorisine yüklemeye gerek
 
 
 
-# Sample project
+## örnek
 
-[Authentication](https://github.com/mental-soft/authentication)
+* ui projeleri için kullanım: [example-ui](example-ui)
+* api projeleri için kullanım: [example-api](example-api)
+* diğer jar projeleri için kullanım: [example-jar](example-jar)
