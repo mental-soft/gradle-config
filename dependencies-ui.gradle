@@ -1,5 +1,6 @@
 ext {
     postgresqlVersion = '42.1.1'
+	mepartyVersion = "1.0.+"
 }
 
 dependencies {
@@ -7,5 +8,8 @@ dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator'
     compile group: 'org.springframework.boot', name: 'spring-boot-devtools'
 
+	compile("com.teammental:medto:$mepartyVersion")
+	compile("com.teammental:merest:$mepartyVersion")
+	
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
 }
