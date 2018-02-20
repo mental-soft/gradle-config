@@ -5,6 +5,7 @@ ext {
 
 dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf'
+    compile group: 'nz.net.ultraq.thymeleaf', name: 'thymeleaf-layout-dialect', version: '2.3.0'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator'
     compile group: 'org.springframework.boot', name: 'spring-boot-devtools'
