@@ -6,6 +6,7 @@ repositories {
 	maven {
         url  "https://dl.bintray.com/mental-soft/api" 
     }
+	 jcenter()
 }
 
 sourceCompatibility = 1.8
