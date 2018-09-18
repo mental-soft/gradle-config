@@ -1,4 +1,4 @@
-﻿repositories {
+repositories {
     mavenCentral()
 	maven {
         url  "http://dl.bintray.com/mental-soft/meparty" 
