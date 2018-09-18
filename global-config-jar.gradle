@@ -1,4 +1,4 @@
-repositories {
+﻿repositories {
     mavenCentral()
 	maven {
         url  "http://dl.bintray.com/mental-soft/meparty" 
@@ -34,7 +34,7 @@ test {
         // Show that tests are run in the command-line output
         events 'STARTED', 'PASSED', 'FAILED'
     }
-    ignoreFailures ignoreFailuresInCheck.toBoolean()
+    ignoreFailures false
 }
 apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/wrapper-version.gradle"
 apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/tool/checkstyle.gradle"

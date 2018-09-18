@@ -3,7 +3,7 @@ apply plugin: 'jdepend'
 jdepend {
     toolVersion = "2.9.1"
     sourceSets = [sourceSets.main, sourceSets.test]
-    ignoreFailures = ignoreFailuresInCheck.toBoolean()
+    ignoreFailures = false
 }
 
 jdependMain {

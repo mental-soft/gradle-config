@@ -7,9 +7,7 @@ Ayrıca her uygulamanın dependency leri burada tutulabilir.
 ## Gradle properties
  
 Aşağıdaki kodları gradle.properties dosyasına ekleyin.
- 
-###### Build rules
-ignoreFailuresInCheck=false
+
  
 ###### Jacoco
 codeCoveragePercent=0.50

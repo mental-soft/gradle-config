@@ -11,7 +11,7 @@ checkstyle {
     new File("$projectDir/config/checkstyle/suppressions.xml") <<
             new URL("https://raw.githubusercontent.com/mental-soft/gradle-config/master/xml/checkstyle/suppressions.xml").getText()
 
-    ignoreFailures = ignoreFailuresInCheck.toBoolean()
+    ignoreFailures = false
 
     sourceSets = [sourceSets.main]
 

@@ -1,4 +1,4 @@
-repositories {
+﻿repositories {
     mavenCentral()
     jcenter()
 	maven {
@@ -42,7 +42,7 @@ test {
         // Show that tests are run in the command-line output
         events 'STARTED', 'PASSED', 'FAILED'
     }
-    ignoreFailures ignoreFailuresInCheck.toBoolean()
+    ignoreFailures false
 }
 
 apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/wrapper-version.gradle"
