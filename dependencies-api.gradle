@@ -16,7 +16,6 @@ dependencies {
     compile group: 'com.zaxxer', name: 'HikariCP'
 
     compile("com.teammental:mestarter:$mepartyVersion")
-	compile("com.teammental:api:$apiVersion")
 	
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
 }
