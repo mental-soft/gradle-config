@@ -1,6 +1,6 @@
 ext {
     postgresqlVersion = '42.1.1'
-	mepartyVersion = "1.2.3.2.SNAPSHOT"
+	mepartyVersion = "1.2.3.3.SNAPSHOT"
 }
 
 dependencies {
