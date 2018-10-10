@@ -1,6 +1,6 @@
 ext {
     springVersion = '5.0.3.RELEASE'
-    mepartyVersion = "1.2.3.5.SNAPSHOT"
+    mepartyVersion = "1.2.3.6.SNAPSHOT"
 }
 
 dependencies {
