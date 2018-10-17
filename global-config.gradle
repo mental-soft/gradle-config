@@ -32,9 +32,6 @@ idea {
 bootRun {
     //bootRun ile çalıştırıldığında environment set edebilmek için gerekli.
     systemProperties = System.properties
-    //Remote debug yapabilmek için
-    jvmArgs = ["-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"]
-
 }
 
 test {
