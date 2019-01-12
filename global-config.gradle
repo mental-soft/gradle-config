@@ -42,7 +42,7 @@ test {
     ignoreFailures false
 }
 
-apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/wrapper-version.gradle"
+apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/snapshot/wrapper-version.gradle"
 //apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/tool/checkstyle.gradle"
 //apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/tool/jacoco.gradle"
 //apply from: "https://raw.githubusercontent.com/mental-soft/gradle-config/master/tool/pmd.gradle"
