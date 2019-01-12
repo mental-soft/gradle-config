@@ -1,3 +1,7 @@
-task wrapper(type: Wrapper) {
+//task wrapper(type: Wrapper) {
+//    gradleVersion = '5.1.1'
+//}
+
+wrapper(type: Wrapper) {
     gradleVersion = '5.1.1'
 }
